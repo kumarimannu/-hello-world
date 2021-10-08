@@ -1,0 +1,668 @@
+
+<html>
+	<head>
+		<title> vjs </title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<style type="text/css">
+			body{
+				margin:0;
+				padding:0;
+			    }	
+		
+			#mainarea{
+					width:100%;
+					background:#F9FBE6;
+					border-top:solid 20px #188A56;
+					
+				}
+			#toparea1{
+					width:1200px;
+					height:150px;
+					background:#F9FBE6;
+					margin:0 auto;
+				}
+		
+			#toparea2{
+					width:300px;
+					height:150px;
+					background:#F9FBE6;
+					float:left;	
+						
+				}
+		
+			#toparea2 img{
+					width:150px;
+					height:150px;
+					margin-left:100px;
+					
+				    }
+			#toparea3{
+					width:600px;
+					height:150px;
+					background:#F9FBE6;
+					float:right;
+					margin-right:300px;
+					
+				} 
+			#secondarea{
+					width:100%;
+					background:#F9FBE6;
+					position:sticky;
+					top:0;
+					z-index:1000;
+				   }
+			#s1{
+				width:1200px;
+			/*	height:50px; */
+				background:#F9FBE6;
+				margin:0 auto;
+				padding-top:5px; 
+				border-left:solid 50px transparent;
+				border-right:solid 50px transparent;
+				border-bottom:solid 50px #2AA3A2;
+			
+			   }
+		
+			#s2 ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+					
+				}
+			#s2 ul li{
+						float:left;
+					}
+			#s2 ul li a:link,#s1 ul li a:visited{
+										color:white;
+										text-decoration:none;
+										display:block;
+										padding:15px 35px;
+									
+							}
+			
+			#s2 ul li a:hover{
+						background:#1C908F;
+				
+					}
+			#s2 ul li ul{
+						background:#239998;
+						display:none;
+					}
+			#s2 ul li:hover ul{
+						display:block;
+						position:absolute;
+						z-index:100;
+					}
+			#s2 ul li:hover ul li{
+							float:none;
+						} 
+			#thirdarea{
+					width:100%;
+					background:yellow;
+				}
+			#t1{
+					height:500;
+					background:url("scl2.jpg") fixed;
+					background-size:cover;
+				/*	animation-name:scl;
+					animation-duration:5s;
+					animation-delay:0;
+					animation-iteration-count:infinite; */
+				}
+		/*	@keyframes scl{
+					0%{
+						background:url("scl2.jpg") no-repeat;
+						transform:translatex(35px);
+						}
+					20%{
+						background:url("view 1.jpg") no-repeat ;
+						transform:translatex(40px);
+						}
+					40%{
+						background:url("view 2.jpg") no-repeat ;
+						transform:translatex(400px);
+						}
+					80%{
+						background:url("scl.jpg") no-repeat ;
+						transform:translatex(600px);
+						}
+					100%{
+						background:url("lab.jpg") no-repeat  ;
+						transform:translatex(200px);
+						}
+					} */
+			#fourtharea{
+					width:100%;
+					background:#FFFF;
+				}
+			#f1{
+				width:1500px;
+				height:850px;
+				background:#FFFF;
+				margin:0 auto;
+
+
+			   }
+			#f2{
+				width:800px;
+				height:150px;
+				background:#FFFF;
+				margin-left:450px;
+			   }
+			#f2 h2{
+				padding-left:10px;
+				padding-top:70px;
+				}
+			#f3{
+				width:850px;
+				height:400px;
+				background:#FFFF;
+				float:left;
+				padding:15px 30px;
+				}
+			#f3 p{
+				font-family:arial,'geneva',serif,'monospace';
+				font-size:15px;
+		        	text-align:justify;
+					
+				}
+			#f4{
+				width:500px;
+				height:400px;
+				background:black;
+				float:left;
+				}
+			#f4 img{
+				 width:600px;
+				height:400px;
+				}
+			#f5{
+				width:600px;
+				height:150px;
+				background:linear-gradient(to top,#020F30,#1F2D4A);
+				border-top:solid 1px white;				
+				}
+			.f5a{
+				width:198px;
+				height:150px;
+				background:;
+				float:left;				
+				border-right:solid 1px white;
+				}
+		
+			#fiftharea{
+					width:100%;
+					background:#FFFF;
+					
+				}
+			#fiftharea2{
+					width:1500px;
+					height:850px;
+					background:#FFFF;
+					margin:0 auto;
+				     }
+			#fiftharea3{
+					width:300px;
+					height:135px;
+					background:#FFFF;
+					position:relative;
+					left:600px;
+					bottom:50px;
+				   }
+			#fiftharea3 h3{
+					padding-left:60px;
+					}
+			#fiftharea3 h2{
+					padding-left:10px;
+					}
+			#fiftharea4{
+					width:400px;
+					height:200px;
+					background:#FFFF;
+					position:relative;
+					left:550px;
+					bottom:80px;
+				   }
+			#fiftharea4 img{
+					
+					width:300px;
+					height:300px;
+					border-radius:50%;
+					border:solid 10px black;
+					
+ 				   }
+			#fiftharea4 img:hover{
+						box-shadow:5px 5px 5px 5px black,10px 2px 3px 10px maroon ;
+							transform:scale(1.1,1.1);
+					      }
+			#fiftharea4 h2{
+					padding-left:40px;
+					}
+			#fiftharea4 h3{
+					padding-left:80px;
+					}
+			#fiftharea5{
+					width:1000px;
+					height:200px;
+					background:#FFFF;
+					position:relative;
+					left:300px;				
+					top:130px;
+				   }	
+			#fiftharea5 p{
+				font-family:arial,'geneva',serif,'monospace';
+				
+		        	text-align:justify;
+					
+				}
+			#fiftharea5 p:nth-child(4){
+							text-align:right;
+						}
+			#fiftharea5 p:last-child{
+							text-align:right;
+						}
+			#sixtharea{
+					width:100%;
+					
+				  }
+			#sixtharea1{
+					width:1500px;
+					height:600px; 
+					background:#F5F2E5;
+					margin:0 auto;	
+				  }
+			#sixtharea2{
+					width:500px;
+					height:450px;
+					background:#1F2D4A;
+					float:left;
+					border-radius:20px 20px 20px 20px;
+					border:solid 5px black;
+			   	 }
+			#sixtharea2:hover{
+						box-shadow:2px 1px 4px 5px black,5px 2px 3px 5px maroon ;
+							transform:scale(0.8,0.8);
+					}
+			#sixtharea2 p{
+					padding-top:10px;
+					
+					}
+			#sixtharea2 p:{
+							word-spacing:10px;
+					
+					}
+			#sixtharea2a{
+					width:500px;
+					height:60px;
+					background:#020F30;
+				    }
+			#sixtharea2a h3{
+					padding:15px 0;
+					}
+			#sixtharea3{	
+				       	width:900px;
+				   	height:450px;
+					background:#FFFF;
+					float:right;
+					padding:15px 30px;
+					border-radius:20px 20px 20px 20px;
+					border:solid 5px black;
+					border-center:solid 1px white;
+				}
+			
+			.b2{
+					width:240px;
+					height:240px;
+					background:black;
+					float:right;
+					margin:65px 38px;
+				/*	border-radius:20px; */ 
+					transform:rotate(35deg);
+				}
+			#sixtharea3a{
+					width:950px;
+					height:60px;
+					background:#020F30;
+					padding:6px 0; 
+					position:relative;
+					right:25px;
+				    }
+			#seventharea{
+					width:100%;
+					height:500px;
+					background:;
+				 }
+			
+			#seventharea1{
+					width:1500px;
+					height:700px;
+					background:#1F2D4A;
+					margin:0 auto;
+				 }
+			#seventharea2{
+					width:1500px;
+					height:400px;
+				 }
+			
+			.a2{
+					width:200px;
+					height:200px;
+					background:black;
+					float:right;
+					margin:50px 70px;
+					border-radius:20px; 
+					position:relative;
+				}
+			.a2 img{
+					border-radius:20px; 
+					border:solid 3px black;
+					
+ 				   }
+			.a2  .details{
+					color:white;
+					position:absolute;
+					top:220;
+					bottom:0;
+					background:#2AA3A2;
+					width:200px;
+					height:20px;
+					padding:10px 0px;
+					text-align:center;
+					font-weight:bold;
+					display:block; 
+					transform:skew(-25deg,0);				
+					}
+			#u1{
+					width:700px;
+					height:400px;
+					background:linear-gradient(to top,#EDEDED);
+					float:left;
+					border-right:solid 1px black;
+				 }
+			#u1 h3{
+					padding-left:10px;
+					padding-top:20px;
+				}
+			#u2{
+					width:750px;
+					height:400px;
+					background:linear-gradient(to top,#EDEDED);
+					float:right;
+				 }
+			#u2 h3{
+					padding-left:10px;
+					padding-top:20px;
+				}
+			#seventharea3{
+					width:1500px;
+					height:620px;
+					background:#020F30;
+					margin-top:60px;
+					border-bottom:solid 1px white;
+				
+				 }
+			#seventharea3a{
+					width:330px;
+					height:365px;
+				/*	background:#191919; */
+					float:left;
+					margin-left:50px;
+					margin-top:50px;
+				}
+			#seventharea3a ul{
+				/*	list-style-type:none;
+					list-style-image:url('arr.png');
+					list-style-position:outside; */
+					list-style:square url('arr.png') inside ;
+				/*	margin:0;
+					padding:0; */
+				    }
+			#seventharea a:link,#seventharea a:visited{
+						color:white;
+						text-decoration:none;
+				}
+			#seventharea3a ul li{
+						color:white;
+						line-height:50px;
+						text-align:left;
+						text-size:4.5px;
+					}
+			#seventharea3b{
+					width:330px;
+					height:365px;
+					float:left;
+					margin-left:50px;
+					margin-top:50px;
+				}
+			#seventharea3b p{
+						
+					color:white;
+				
+		
+					}
+			#seventharea3c{
+					width:330px;
+					height:380px;
+					float:left;
+					margin-left:100px;
+					margin-top:50px;
+					margin-bottom:20px;
+				}
+			#seventharea3d{
+					width:1200px;
+					height:50px;
+				/*	background:yellow; */
+					position:relative;
+					top:450px;
+					left:150px;
+					border-top:solid 1px white;
+				}
+			#seventharea3e{
+					width:1200px;
+					height:50px;
+					position:relative;
+					margin-top:420px;
+					margin-left:150px;
+				}
+		
+			
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea1">
+				<div id="toparea2">
+					<img src="vjs1.png"/>
+				</div>
+				<div id="toparea3">
+					<h1> <font color="#2B1A78" size="7px">VIDYA JYOTI SCHOOL </font> </h1>
+							<font color="#2B1A78" size="5px">A Senior Secondary School Affiliated To C.B.S.E(New Delhi) </font>
+				</div>
+				<div id="toparea4">
+				</div>
+			</div>
+			
+		</div>
+		<div id="secondarea">
+			<div id="s1">
+				<div id="s2">
+						<ul>
+						<li> <a href="home.html"> HOME </a> 
+							<ul>
+								<li> <a href="#"> product1 </a> </li>
+								<li> <a href="#"> product2 </a> </li>
+								<li> <a href="#"> product3 </a> </li>
+							</ul>	
+						</li>
+						<li> <a href="about.html"> ABOUT US </a> </li>
+						<li> <a href="admisson.html"> ADMISSION </a> </li>
+						<li> <a href="academic.html"> ACADEMIC </a> </li>
+						<li> <a href="calendar.html"> CALENDAR</a> </li>
+						<li> <a href="student.html"> STUDENT</a> </li>
+						<li> <a href="gallery.html"> GALLERY </a> 
+							<ul>
+								<li> <a href="#"> Photo Gallery </a> </li>
+								<li> <a href="#"> Video Gallery </a> </li>
+								<li> <a href="#"> </a> </li>
+							</ul>
+						</li>	
+						<li> <a href="contact.html"> CONTACT US </a> </li>
+					</ul>
+				</div>
+			</div>
+		</div> 
+		<div id="thirdarea">
+			<div id="t1">
+			</div>		
+		</div>
+		<div id="fourtharea">
+			<div id="f1">
+				<div id="f2">
+					 <h2 id="about"><font color="#2B1A78" size="6.5px"> ABOUT VIDYA JYOTI SCHOOL </font> </h2> 
+				</div>
+				<div id="f3">
+					<p> <b> VIDYA JYOTI SCHOOL </b>, situated at <i>TATA STEEL COMPLEX COLONY, GAMHARIA </i> is supported by <b> TATA STEEL GROWTH SHOP </b> since it came into existence on 5th August 1976. </p>
+					<p>Initially it was a feeder school to Tisco Schools in Jamhedpur. It is owned by Tata Growth Shop.</p>
+					<p>The school is affiliated to CBSE Board New Delhi till senior secondary level-Std-XII.The school follows the guidelines regulation of the CBSE. The school complies with all the instruction and regulations given by district education office.</p>
+					<p>The school provides instructions on the following subjects: English, Hindi, Maths , Science, Social Science, Computer (I.T) ,Sanskrit. The medium of instruction is English. It is co- educational school.</p>
+					<p>The mission of the school is to increase educational footprints in the areas of quality Secondary Education, Professional and Technical Education and Occupational Training and serve the growing aspirations of citizens of Gamharia, Adityapur and at large Jamshedpur.</p>
+					<p>Vidya Jyoti School was founded with the Vision that it will emerge as a centre of academic excellence. The school is committed to expanding the horizons of its students through use of innovative teaching methods, sharing of knowledge, skill development, team building coupled with the freedom to excel at an individual pace. The school believes that all growth must be anchored in sound values that will guide each student to become a responsible citizen of our country.</p>
+					<p>Vidya Jyoti School seeks to inculcate in its students, the ethos of excellence based on aspirations rather than remain limited by their perceived capability. The endeavour of the school is to ensure a holistic development of the student's personality by nurturing the pursuit of knowledge, cultivating and appreciation for the arts, literature, sports and games, as well as instilling high regard for human values and social consciousness.</p>
+					<p>Vidya Jyoti has adopted English as the medium of instruction and resolves to create citizens of the world, rooted in the best Indian traditions. </p>
+					<p>Our endeavour shall be to work as a team with all parents to offer our students constant and meaningful opportunities for both academic excellence as well as the assimilation of human values. The school will provide the impetus which will inspire each student to be professionally excellent, responsible and upright member of our society.</p>
+				</div>
+				<div id="f4">
+					<img src="vidya.jpg"/>
+					<div id="f5">
+						<div class="f5a">
+							<p align="center"> <font color="white" size="10px"> 60 </font> </p> 
+							<p align="center"> <font color="gold" size="5px"> Certified Teachers </font></p>
+						</div>
+						<div class="f5a">
+							<p align="center"> <font color="white" size="10px"> 1558 </font> </p> 
+							<p align="center"> <font color="gold" size="5px"> Student Enrolled </font> </p>
+						</div>
+						<div class="f5a">
+							<p align="center"> <font color="white" size="10px"> 100% </font> </p> 
+							<p align="center"> <font color="gold" size="5px"> Staisfied Parents</font> </p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fiftharea">
+			<div id="fiftharea2">
+				<div id="fiftharea3">
+					<h3> <font color="crimson" size="5px"> FROM </font> </h3>
+					<h2> <font color="#2B1A78" size="6.5px">  MESSAGE DESK </font> </h2>
+				</div>
+				<div id="fiftharea4">
+					<img src="IM.jpg"/>
+					<h2> <font color="#2B1A78"> SUNIL KUMAR JHA </font> </h2>
+					<h3>  <font color="#1C908F"> PRINCIPAL  </font> </h3>
+				</div>
+				<div id="fiftharea5">
+					<p>It is my great pleasure to welcome all in the family of Vidya Jyoti School. I am very fortunate to have a dedicated and caring team of teachers, parents and students. Each day is filled with new experience and learning for all. I take great pleasure in my students who always bear a smiling face no matter what, inspiring all to begin the day on a happy note.</p>
+					<b>As it is rightly said by the great scientist, ARISTOTLE : “EDUCATING THE MIND WITHOUT EDUCATING THE HEART IS NO EDUCATION AT ALL”</b>
+					<p>The team of dedicated and well experienced teachers always tries to touch the heart of every child which makes our school a little different from others. They always try to bring overall development in every child. At VJS we focus on the growth of each and every student, recognize their potential, work on it and try to provide an environment such that he/she could spread his/her wings, soar in the eternity and achieve their dreams. We believe in preparing a generation that is confident, resilient and can face all challenges of the society.</p>
+					<p align="right"> <b>SUNIL KUMAR JHA</b> </p>
+					<p align="right"> M.sc,B.Ed, L.L.B </p>
+				</div>
+			</div>
+		</div>
+		<div id="sixtharea">
+			<div id="sixtharea1">
+				<div id="sixtharea2">
+					<div id="sixtharea2a">
+						<h3 align="center"> <font color="white"> NOTICE  BOARD </font> </h3>
+						<p> <font color="green" size="5px"> <b>  25 Aug 2021 </b></font> <font color="white">  HALF YEARLY TIME TABLE (2021-22) </font> </p>
+					</div>
+				</div>
+				<div id="sixtharea3">
+					<div id="sixtharea3a">
+						<h2 align="center"> <font color="white"> SCHOOL PICTURE GALLERY </font> </h2>
+						<div class="b2">
+							<img src="VARI.jpg" width="240px" height="240px"/>
+						</div>
+						<div class="b2">
+							<img src="eve.jpg" width="240px" height="240px"/>			
+						</div>
+						<div class="b2">
+							<img src="annual.jpg" width="240px" height="240px"/>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="seventharea">
+			<div id="seventharea1">
+				<div id="seventharea2">
+					<div id="u1">
+						<h3 align="center"> <font color="#FFFF"> CLASS X TOPPERS </font> </h3>
+						<div class="a2">
+							<img src="saty.jpg" width="200px" height="200px" />
+							<div class="details">
+								 (90%)
+							</div>
+						</div>
+						<div class="a2">
+							<img src="shreya.jpg" width="200px" height="200px" />
+							<div class="details">
+								(91.7%)
+							</div>
+						</div>  
+					</div>
+					<div id="u2">
+						<h3 align="center"> <font color="#FFFF"> CLASS XII TOPPERS</font> </h3> 
+						<div class="a2">
+							<img src="shah.jpg" width="200px" height="200px" />
+							<div class="details">
+								(93%)
+							</div>
+						</div>
+						<div class="a2">
+							<img src="pra.jpg" width="200px" height="200px" />
+							<div class="details">
+								(93%)
+							</div>
+						</div>  
+					</div>
+				</div>
+				<div id="seventharea3">
+					<div id="seventharea3a"> 
+						<h3 align="center"> <font color="white" size="5px"> QUICK LINKS</font> </h3>
+							<ul>
+							 <font size="4.5px">	<li> <a href="#about"> About Us </a> </li>
+										<li> <a href="#photo">Photo Gallery </a> </li>
+										<li> <a href="#video"> Video Gallery </a> </li>
+										<li> <a href="admin.html"> Admin </a> </li>
+							 </font>
+							</ul>
+					
+					</div>
+					<div id="seventharea3b">
+						<h3 align="center"> <font color="white" size="5px">SCHOOL ADDRESS</font> </h3>
+						<br><font color="white" size="5px"> VIDYA JYOTI SCHOOL </font> </br>
+							<p> <font size="4.5px">  Tisco Complex Colony, Gamharia, SERAIKELLA-KHARSAWAN, Jharkhand-832108 </p>
+					 		<p> <a href="mailto:vidyajyotischool@gmail.com"> <i class="fa fa-envelope"> </i>   vidyajyotischool@gmail.com </a> </p>
+							 <p> <a href="tel:7762000456">  <i class="fa fa-phone"> </i>  7762000456 </a> </font> </p>
+					</div>
+					<div id="seventharea3c">
+						<h3 align="center"> <font color="white" size="5px">OUR LOCATION</font> </h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29418.39519964195!2d86.090344!3d22.82841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63266240adbb0065!2sVidya%20Jyoti%20School!5e0!3m2!1sen!2sin!4v1632690037419!5m2!1sen!2sin" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+					</div>
+					<div id="seventharea3d">
+					</div>
+					<div id ="seventharea3e">
+						<font color="white" size="4.5px"> Copyright &copy; Vidya Jyoti School </font>
+						<p> <font color="white" size="4.5px"> Website Desgin By- <font> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
